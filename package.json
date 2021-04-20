@@ -1,0 +1,19 @@
+{
+  "name": "project-1",
+  "version": "1.0.0",
+  "description": "Build a web tool that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedelkordy409/udacity-evaluate-a-news-article-with-ntural-language-processing.git"
+  },
+  "author": "Ahmed Elkordy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmedelkordy409/udacity-evaluate-a-news-article-with-ntural-language-processing/issues"
+  },
+  "homepage": "https://github.com/ahmedelkordy409/udacity-evaluate-a-news-article-with-ntural-language-processing#readme"
+}
