@@ -1,12 +1,13 @@
-var MeaningCloud = require('./../services/MeaningCloud.js');
+"use strict";
 
+var MeaningCloud = require('./../services/MeaningCloud.js');
 //const validator = require('validator');
 // import local services
 const dotenv = require('dotenv');
 dotenv.config();
 
 
-const meaningCloud = new MeaningCloud(process.env.MeaningCloud_API_KEY)
+var meaningCloud = new MeaningCloud(process.env.MeaningCloud_API_KEY)
 
 
 

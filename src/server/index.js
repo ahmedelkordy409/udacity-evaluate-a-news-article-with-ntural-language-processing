@@ -24,15 +24,15 @@ console.log(__dirname)
 // App Route
 app.get('/', appController.home)
 
-app.get('/test',appController.test)
+app.get('/test', appController.test)
 
-app.post('/sentiment/analysis',appController);
+app.post('/sentiment/analysis', appController.sentimentAnalysisController);
 
 
 
 /**
  * Start Express server.
  */
-app.listen(app.get('port'), () => {
-  console.log('localhost:',app.get('port'));
-});
+ app.listen(8081, function () {
+     console.log('Example app listening on port 8081!')
+ })
