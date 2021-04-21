@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ahmedelkordy409/udacity-evaluate-a-news-article-with-ntural-language-processing#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "aylien_textapi": "^0.7.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
