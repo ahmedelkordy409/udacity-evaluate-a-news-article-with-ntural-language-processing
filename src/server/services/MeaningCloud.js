@@ -1,5 +1,5 @@
 "use strict";
-export default class MeaningCloud {
+ class MeaningCloud {
   constructor(api_key) {
     this.api_key = api_key;
     this.baseURL = 'https://api.meaningcloud.com/sentiment-2.1?'
@@ -30,3 +30,5 @@ export default class MeaningCloud {
   }
 
 }
+
+module.exports = MeaningCloud;

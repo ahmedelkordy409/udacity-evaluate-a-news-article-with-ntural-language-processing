@@ -1,4 +1,4 @@
-// Cors allows the browser and server to communicate without any security interruptions
+"use strict";
 const cors = require('cors');
 var path = require('path')
 const express = require('express')

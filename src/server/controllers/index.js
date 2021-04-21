@@ -1,4 +1,5 @@
-const MeaningCloud = require('../services/MeaningCloud.js');
+var MeaningCloud = require('./../services/MeaningCloud.js');
+
 //const validator = require('validator');
 // import local services
 const dotenv = require('dotenv');
