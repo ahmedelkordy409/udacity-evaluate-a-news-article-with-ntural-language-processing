@@ -1,7 +1,11 @@
 "use strict";
- class MeaningCloud {
+var APIservice = require('./APIservice.js');
+const fetch = require('node-fetch');
+
+ class MeaningCloud extends APIservice {
   constructor(api_key) {
-    this.api_key = api_key;
+    super();
+    this.api_key = api_key,
     this.baseURL = 'https://api.meaningcloud.com/sentiment-2.1?'
   }
 
@@ -19,7 +23,7 @@
       const apiCall = await fetch(apiURL)
       console.log("apiCall :", apiCall)
 
-      const apiRes = await data.json()
+      const apiRes = await apiCall.json()
       console.log("apiRes :", apiRes)
 
       return apiRes
