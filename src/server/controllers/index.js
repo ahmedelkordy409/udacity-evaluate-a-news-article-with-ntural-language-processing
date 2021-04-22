@@ -1,6 +1,7 @@
 "use strict";
-var MeaningCloud = require('./../services/MeaningCloud.js');
-//const validator = require('validator');
+var MeaningCloud = require('../services/MeaningCloud.js');
+const mockAPIResponse = require('../mockAPI.js')
+
 // import local services
 const dotenv = require('dotenv');
 dotenv.config();
@@ -16,15 +17,7 @@ var meaningCloud = new MeaningCloud(process.env.MeaningCloud_API_KEY)
  * sentiment analysis form in index page page.
 */
 exports.home = (req, res) => {
-  try {
-
-
-
-
-  } catch (e) {
-    res.send(e)
-  }
-
+    res.render('src/client/views/index.html');
 };
 
 
@@ -37,12 +30,10 @@ exports.home = (req, res) => {
 */
 exports.test = (req, res) => {
   try {
-
-
+    res.send(mockAPIResponse)
   } catch (e) {
     res.send(e)
   }
-
 };
 
 
